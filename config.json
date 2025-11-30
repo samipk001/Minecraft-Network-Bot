@@ -1,0 +1,11 @@
+{
+  "prefix": "!",
+  "panel_channel_id": 0,
+  "ticket_category_name": "Tickets",
+  "staff_roles": ["Staff"],
+  "ticket_options": [
+    { "label": "General Support", "value": "general" },
+    { "label": "Billing Support", "value": "billing" },
+    { "label": "Report User", "value": "report" }
+  ]
+}
