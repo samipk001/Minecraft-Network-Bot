@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "price": 1000,
+      "emoji": "💎",
+      "description": "Precious diamond block"
+    },
+    {
+      "id": "gold",
+      "name": "Gold Block",
+      "price": 500,
+      "emoji": "🟨",
+      "description": "Shiny gold block"
+    },
+    {
+      "id": "iron",
+      "name": "Iron Block",
+      "price": 300,
+      "emoji": "⬜",
+      "description": "Sturdy iron block"
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald",
+      "price": 800,
+      "emoji": "💚",
+      "description": "Rare emerald gem"
+    },
+    {
+      "id": "enchanted_book",
+      "name": "Enchanted Book",
+      "price": 1500,
+      "emoji": "📖",
+      "description": "Magical enchanted book"
+    },
+    {
+      "id": "netherite",
+      "name": "Netherite Ingot",
+      "price": 2000,
+      "emoji": "⬛",
+      "description": "Ultra-rare netherite"
+    },
+    {
+      "id": "potion",
+      "name": "Health Potion",
+      "price": 250,
+      "emoji": "🧪",
+      "description": "Restores health"
+    },
+    {
+      "id": "beacon",
+      "name": "Beacon",
+      "price": 3000,
+      "emoji": "🔆",
+      "description": "Powerful beacon of light"
+    }
+  ]
+}

@@ -37,12 +37,29 @@ bot = commands.Bot(command_prefix=config.get("prefix", "!"), intents=intents)
 
 @bot.event
 async def setup_hook():
-    # Load cogs
+    # Load all cogs
+    cogs = [
+        "cogs.tickets",
+        "cogs.moderation",
+        "cogs.economy",
+        "cogs.profiles",
+        "cogs.fun",
+        "cogs.utilities"
+    ]
+    
+    for cog in cogs:
+        try:
+            await bot.load_extension(cog)
+            logger.info(f"Loaded cog: {cog}")
+        except Exception:
+            logger.exception(f"Failed to load cog {cog}")
+
+    # Sync slash commands
     try:
-        await bot.load_extension("cogs.tickets")
-        logger.info("Loaded cog: cogs.tickets")
+        await bot.tree.sync()
+        logger.info("Slash commands synced successfully")
     except Exception:
-        logger.exception("Failed to load cog cogs.tickets")
+        logger.exception("Failed to sync slash commands")
 
     logger.info("Setup hook complete.")
 
