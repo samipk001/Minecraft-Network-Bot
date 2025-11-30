@@ -35,3 +35,4 @@ Notes
 
 - Configure `config.json` to set `prefix`, `panel_channel_id`, `ticket_category_name`, and `staff_roles`.
 - Use `!ticketpanel` (admin) in a channel to post the ticket creation panel.
+# ticketbot
